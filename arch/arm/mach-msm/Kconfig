@@ -2753,6 +2753,13 @@ config MSM_CPU_PWRCTL
 	  Droop detector mechanism can adversely affect krait plls during
 	  stand alone power collapse operation. Selecting this option
 	  ensures that they are always off.
+	  
+config FORCE_FAST_CHARGE
+	bool "Fast Charger Mode ported to Xperia SP <sdprabowo77@gmail.com>"
+	default y
+ 	help
+ 		A simple sysfs interface to force adapters that
+ 		are detected as USB to charge as AC
 
 config MMC_MSM_POWER_SUPPLY_SDC3_VIA_MPP04
 	bool "PMIC MPP04"
